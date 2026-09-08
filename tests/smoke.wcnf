@@ -1,0 +1,5 @@
+c Synthetic build-and-interface smoke test
+p wcnf 2 3 10
+10 1 0
+10 2 0
+1 -1 -2 0

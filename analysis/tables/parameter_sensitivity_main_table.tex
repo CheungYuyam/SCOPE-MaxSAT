@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering\scriptsize
+\caption{Selected parameter-sensitivity results on the 160-instance 23-WPMS benchmark under the 60-s cutoff. The table reports BASE and nine representative one-factor variants, while the complete 29-variant screen is shown in \cref{fig:parameter-sensitivity}. The primary criterion is verified feasibility. Objective comparisons are conditional on both configurations having a verified solution and a reported best-event time no later than 60~s. $W/L/T$ denotes quality wins, losses, and ties against BASE under the strict 60-s cutoff. Adjusted $p$ values use a two-sided exact sign test with Holm correction across the 29 non-baseline configurations.}
+\label{tab:parameter-sensitivity-main}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrrrrr}
+\toprule
+ID & Var. & Value & $N_{\rm feas}$ & $\Delta N_{\rm feas}$ & $W$ & $L$ & $T$ & adj. $p$ & Verdict\\
+\midrule
+BASE & all & frozen & 159 & +0 & 0 & 0 & 154 & 1.0000 & reference\\
+P05 & $p$ & 0.5 & 159 & +0 & 27 & 6 & 120 & 0.0084 & quality candidate\\
+TP20 & $\tau_{\mathrm P}$ & 20 & 159 & +0 & 19 & 2 & 132 & 0.0060 & quality candidate\\
+TP0 & $\tau_{\mathrm P}$ & 0 & 159 & +0 & 5 & 38 & 111 & $<0.0001$ & quality regression\\
+GAMMA0 & $\gamma$ & 0 & 158 & -1 & 40 & 10 & 102 & 0.0007 & feasibility loss\\
+K1000 & $\kappa$ & 1000 & 159 & +0 & 19 & 11 & 123 & 1.0000 & coverage preserved\\
+RL0005 & $r_{\mathrm L}$ & 0.005 & 159 & +0 & 11 & 14 & 129 & 1.0000 & coverage preserved\\
+TH1 & $\tau_{\mathrm H}$ & 1 & 159 & +0 & 8 & 10 & 136 & 1.0000 & coverage preserved\\
+TQ20 & $\tau_{\mathrm Q}$ & 20 & 159 & +0 & 9 & 3 & 141 & 1.0000 & coverage preserved\\
+TQ40 & $\tau_{\mathrm Q}$ & 40 & 159 & +0 & 7 & 2 & 144 & 1.0000 & coverage preserved\\
+\bottomrule
+\end{tabular}
+}
+\end{table}

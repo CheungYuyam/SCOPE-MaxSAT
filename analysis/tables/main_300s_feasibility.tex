@@ -1,0 +1,37 @@
+\begin{table}[H]
+  \centering
+  \caption{Hard-feasible assignments under the strict 300-s cutoff. The four complete tracks contain 784 benchmark--instance pairs. Bold denotes the largest count within a row across all eight solvers. Panel (a) contains SCOPE-MaxSAT and published methods. Panel (b) contains the competition-winning implementations.}
+  \label{tab:main-300s-feasibility}
+  \scriptsize
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}p{0.20\linewidth}*{4}{>{\raggedleft\arraybackslash}p{0.16\linewidth}}@{}}
+    \toprule
+    \multicolumn{5}{@{}l}{\textbf{(a) SCOPE-MaxSAT and published methods}} \\
+    \midrule
+    Benchmark ($\#\mathrm{inst.}$) & SCOPE-MaxSAT & NuWLS & SATLike3.0 & BandMaxSAT \\
+    \midrule
+    23-WPMS (160) & \textbf{159} & 104 & 100 & 99 \\
+    23-PMS (179) & \textbf{175} & 142 & 119 & 140 \\
+    24-WPMS (229) & 225 & 171 & 173 & 171 \\
+    24-PMS (216) & \textbf{213} & 165 & 149 & 161 \\
+    \midrule
+    Full four-track set (784) & \textbf{772} & 582 & 541 & 571 \\
+    \bottomrule
+  \end{tabular*}
+
+  \vspace{0.8em}
+
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}p{0.20\linewidth}*{4}{>{\raggedleft\arraybackslash}p{0.16\linewidth}}@{}}
+    \toprule
+    \multicolumn{5}{@{}l}{\textbf{(b) Competition-winning implementations}} \\
+    \midrule
+    Benchmark ($\#\mathrm{inst.}$) & NuWLS-c-2023 & NuWLS-c-FPS & SPB-MaxSAT-c-FPS & SPB-MaxSAT-c-Band \\
+    \midrule
+    23-WPMS (160) & \textbf{159} & \textbf{159} & \textbf{159} & \textbf{159} \\
+    23-PMS (179) & 172 & 172 & 173 & 170 \\
+    24-WPMS (229) & 225 & \textbf{226} & 225 & 225 \\
+    24-PMS (216) & 211 & 212 & 211 & 212 \\
+    \midrule
+    Full four-track set (784) & 767 & 769 & 768 & 766 \\
+    \bottomrule
+  \end{tabular*}
+\end{table}

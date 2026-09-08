@@ -1,0 +1,18 @@
+\begin{table}[H]
+  \centering
+  \caption{Completed $2\times2$ factorial ablation. $P$ activates projection, state transfer and retained arbitration. $W$ activates the SCOPE weighting path. The endpoint cells $Y_{00}$ and $Y_{11}$ reuse the canonical A0 and A7 records from \cref{tab:ablation-60s}. The two off-diagonal cells complete the factorial contrast. Cost contrasts use $Y_{11}$ as the reference.}
+  \label{tab:ablation-factorial-60s}
+  \scriptsize
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lccrrrr@{}}
+    \toprule
+    Cell & $P$ & $W$ & Feasible & RMST (s) & $W/L/T$ vs $Y_{11}$ & Median $\Delta$cost (\%) \\
+    \midrule
+    $Y_{00}$ & 0 & 0 & 132 & 16.32 & 54/10/49 & 0.00 \\
+    $Y_{01}$ & 0 & 1 & 126 & 15.55 & 38/59/15 & 0.00 \\
+    $Y_{10}$ & 1 & 0 & 134 & 17.02 & 61/21/49 & 0.00 \\
+    $Y_{11}$ & 1 & 1 & 135 & 16.95 & -- & -- \\
+    \bottomrule
+  \end{tabular*}
+  \vspace{0.35em}
+  \raggedright\footnotesize The observed feasibility-count interaction is $135-134-126+132=7$. The RMST interaction is $0.70\,\mathrm{s}$.
+\end{table}

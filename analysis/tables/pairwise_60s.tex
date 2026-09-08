@@ -1,0 +1,37 @@
+\begin{table}[H]
+  \centering
+  \caption{Paired SCOPE-MaxSAT contrasts over all 784 instances at 60~s. The feasibility interval is a paired instance-bootstrap 95\% interval for the count difference. $W/L/T$ compares original WCNF cost on common feasible pairs. Negative median relative cost means a lower SCOPE-MaxSAT cost. McNemar and two-sided exact sign-test $p$ values are Holm adjusted across the seven baselines.}
+  \label{tab:pairwise-60s}
+  \scriptsize
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrr@{}}
+    \toprule
+    \multicolumn{6}{@{}l}{\textbf{(a) Paired feasibility}} \\
+    \midrule
+    Baseline & SCOPE only & Base only & $\Delta N_{\mathrm{feas}}$ & 95\% CI & McNemar \\
+    \midrule
+    NuWLS & 173 & 0 & +173 & [150, 196] & $<0.001$ \\
+    SATLike3.0 & 227 & 0 & +227 & [203, 252] & $<0.001$ \\
+    BandMaxSAT & 188 & 0 & +188 & [165, 211] & $<0.001$ \\
+    NuWLS-c-2023 & 13 & 12 & +1 & [-9, 11] & 1.000 \\
+    NuWLS-c-FPS & 13 & 12 & +1 & [-9, 11] & 1.000 \\
+    SPB-c-FPS & 13 & 10 & +3 & [-6, 12] & 1.000 \\
+    SPB-c-Band & 13 & 12 & +1 & [-9, 11] & 1.000 \\
+    \bottomrule
+  \end{tabular*}
+  \vspace{0.65em}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrr@{}}
+    \toprule
+    \multicolumn{5}{@{}l}{\textbf{(b) Conditional quality}} \\
+    \midrule
+    Baseline & Common & $W/L/T$ & Median $\Delta$cost (\%) & Sign test \\
+    \midrule
+    NuWLS & 578 & 55/173/350 & 0.00 & $<0.001$ \\
+    SATLike3.0 & 524 & 248/172/104 & 0.00 & $<0.001$ \\
+    BandMaxSAT & 563 & 273/190/100 & 0.00 & $<0.001$ \\
+    NuWLS-c-2023 & 738 & 80/518/140 & 7.67 & $<0.001$ \\
+    NuWLS-c-FPS & 738 & 123/479/136 & 5.69 & $<0.001$ \\
+    SPB-c-FPS & 738 & 96/517/125 & 7.33 & $<0.001$ \\
+    SPB-c-Band & 738 & 79/529/130 & 7.67 & $<0.001$ \\
+    \bottomrule
+  \end{tabular*}
+\end{table}

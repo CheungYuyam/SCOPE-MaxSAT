@@ -1,0 +1,37 @@
+\begin{table}[H]
+  \centering
+  \caption{Tie-inclusive objective wins and time to the winning objective in the common eight-solver comparison. Each entry is $N_{\mathrm{win}}/\overline t_{\mathrm{win}}$, with $\overline t_{\mathrm{win}}$ measured in seconds. A tied minimum counts as a win for every tied solver. Bold denotes the largest win count in each row. The conditional times are not ranked because the winning sets differ between solvers. Both panels use the same common eight-solver winner pool.}
+  \label{tab:main-60s-quality}
+  \scriptsize
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}p{0.20\linewidth}*{4}{>{\raggedleft\arraybackslash}p{0.16\linewidth}}@{}}
+    \toprule
+    \multicolumn{5}{@{}l}{\textbf{(a) SCOPE-MaxSAT and published methods}} \\
+    \midrule
+    Benchmark ($\#\mathrm{inst.}$) & SCOPE-MaxSAT & NuWLS & SATLike3.0 & BandMaxSAT \\
+    \midrule
+    23-WPMS (160) & 19/16.71 & 22/12.35 & 11/21.89 & 11/20.76 \\
+    23-PMS (179) & 30/14.52 & 43/17.90 & 20/12.50 & 23/6.87 \\
+    24-WPMS (229) & 63/16.41 & 51/14.55 & 20/8.49 & 22/5.25 \\
+    24-PMS (216) & 62/10.22 & 75/10.69 & 55/15.31 & 55/3.49 \\
+    \midrule
+    Full four-track set (784) & 174/13.91 & 191/13.53 & 106/14.17 & 111/6.25 \\
+    \bottomrule
+  \end{tabular*}
+
+  \vspace{0.8em}
+
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}p{0.20\linewidth}*{4}{>{\raggedleft\arraybackslash}p{0.16\linewidth}}@{}}
+    \toprule
+    \multicolumn{5}{@{}l}{\textbf{(b) Competition-winning implementations}} \\
+    \midrule
+    Benchmark ($\#\mathrm{inst.}$) & NuWLS-c-2023 & NuWLS-c-FPS & SPB-MaxSAT-c-FPS & SPB-MaxSAT-c-Band \\
+    \midrule
+    23-WPMS (160) & 62/18.68 & 48/21.43 & 58/18.06 & \textbf{71}/20.81 \\
+    23-PMS (179) & 88/17.66 & 75/20.56 & 88/17.86 & \textbf{89}/18.94 \\
+    24-WPMS (229) & 108/13.94 & 93/19.72 & \textbf{124}/16.36 & \textbf{124}/16.45 \\
+    24-PMS (216) & 129/13.38 & 121/15.74 & 118/12.05 & \textbf{133}/15.42 \\
+    \midrule
+    Full four-track set (784) & 387/15.36 & 337/18.72 & 388/15.64 & \textbf{417}/17.39 \\
+    \bottomrule
+  \end{tabular*}
+\end{table}

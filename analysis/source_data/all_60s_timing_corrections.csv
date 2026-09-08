@@ -1,0 +1,14 @@
+Dataset,Model,InstanceKey,OriginalBestTimeSeconds,NormalizedBestTimeSeconds,Reason
+24-pms-60s,SPB-MaxSAT-c-Band,privilege_escalation_cloud_access_control_repair_task_15_old,60.002104,60.0,60-s controller endpoint; excess is system timing jitter
+24-wpms-60s,SPB-MaxSAT-c-Band,minimumweightdominatingsetproblem_wt_soc_livejournal_user_groups_old,60.011064,60.0,60-s controller endpoint; excess is system timing jitter
+24-pms-60s,SPB-MaxSAT-c-FPS,decision_tree_hypothyroid_un_formula_0_8_2021_atleast_127_max_6_reduced_incomplete_tree_old,60.001617,60.0,60-s controller endpoint; excess is system timing jitter
+23-wpms-60s,NuWLS-c-2023,minimumweightdominatingsetproblem_wt_bn_human_bnu_1_0025865_session_1_bg_old,60.001822,60.0,60-s controller endpoint; excess is system timing jitter
+23-wpms-60s,NuWLS-c-2023,minimumweightdominatingsetproblem_wt_sc_rel9_old,60.037896,60.0,60-s controller endpoint; excess is system timing jitter
+23-wpms-60s,NuWLS-c-2023,minimumweightdominatingsetproblem_wt_web_wikipedia2009_old,60.092056,60.0,60-s controller endpoint; excess is system timing jitter
+23-pms-60s,SCOPE-MaxSAT,planning_bnn_cellda_x_12_old,61.841738,60.0,60-s controller endpoint; excess is system timing jitter
+23-wpms-60s,SCOPE-MaxSAT,minimumweightdominatingsetproblem_wt_channel_500x100x100_b050_old,61.398191,60.0,60-s controller endpoint; excess is system timing jitter
+23-wpms-60s,SCOPE-MaxSAT,minimumweightdominatingsetproblem_wt_inf_road_usa_old,62.175466,60.0,60-s controller endpoint; excess is system timing jitter
+23-wpms-60s,SCOPE-MaxSAT,minimumweightdominatingsetproblem_wt_sc_rel9_old,61.796701,60.0,60-s controller endpoint; excess is system timing jitter
+24-pms-60s,SCOPE-MaxSAT,planning_bnn_cellda_x_12_old,64.644076,60.0,60-s controller endpoint; excess is system timing jitter
+24-pms-60s,SCOPE-MaxSAT,seansafarpour_mem_ctrl_problem_dimacs_27_filtered_old,60.624619,60.0,60-s controller endpoint; excess is system timing jitter
+24-wpms-60s,SCOPE-MaxSAT,minimumweightdominatingsetproblem_wt_hugebubbles_00020_old,64.037649,60.0,60-s controller endpoint; excess is system timing jitter

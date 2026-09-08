@@ -1,0 +1,18 @@
+build/
+*.o
+*.obj
+*.a
+*.lib
+*.exe
+*.log
+*.out
+*.zip
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+# The publication-ready SVG/PNG/PDF figures and LaTeX tables are retained.
+# Lossless TIFF exports are reproducible but unnecessarily large for GitHub.
+analysis/figures/*.tiff

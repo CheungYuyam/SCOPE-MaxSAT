@@ -1,0 +1,29 @@
+\begin{table}[H]
+  \centering
+  \caption{Crossed controller-by-kernel experiment on the same 160 instances under the 60-s cutoff. Host-NuWLS is the independently rerun instrumented upstream configuration corresponding to A0; the SCOPE-MaxSAT cell uses the frozen A7 record. Panel a writes out all four cells of the $2\times2$ design. Panel b gives the paired host-to-SCOPE coverage contrast within each kernel. SCOPE-only and host-only are discordant paired counts; their difference equals $\Delta N_{\mathrm{feas}}$.}
+  \label{tab:cross-kernel}
+  \scriptsize
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}llcrr@{}}
+    \toprule
+    \multicolumn{5}{@{}l}{\textbf{(a) Four experimental cells}} \\
+    \midrule
+    Configuration & Kernel & SCOPE controller & Verified output & No verified output \\
+    \midrule
+    Host-NuWLS & NuWLS & Off & 132 & 28 \\
+    SCOPE-MaxSAT & NuWLS & On & 135 & 25 \\
+    Host-CCEHC & CCEHC & Off & 53 & 107 \\
+    SCOPE-CCEHC & CCEHC & On & 134 & 26 \\
+    \bottomrule
+  \end{tabular*}
+  \vspace{0.65em}
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrr@{}}
+    \toprule
+    \multicolumn{5}{@{}l}{\textbf{(b) Within-kernel paired coverage effect}} \\
+    \midrule
+    Kernel & $\Delta N_{\mathrm{feas}}$ & SCOPE-only & Host-only & Both \\
+    \midrule
+    NuWLS & +3 & 18 & 15 & 117 \\
+    CCEHC & +81 & 81 & 0 & 53 \\
+    \bottomrule
+  \end{tabular*}
+\end{table}

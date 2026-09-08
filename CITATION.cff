@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or result archive, please cite the associated paper."
+title: "SCOPE-MaxSAT: Feasibility-Preserving Sequential Optimization for Weighted Partial MaxSAT"
+type: software
+authors:
+  - family-names: Cheung
+    given-names: Yuyam
+  - family-names: Qin
+    given-names: Ruqian
+  - family-names: Zhang
+    given-names: Zaijun
+version: "1.0.0"
+license: other
+repository-code: "https://github.com/CheungYuyam/SCOPE-MaxSAT"
+keywords:
+  - MaxSAT
+  - weighted partial MaxSAT
+  - stochastic local search
+  - feasibility preservation
+  - algorithm configuration
